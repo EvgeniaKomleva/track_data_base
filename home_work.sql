@@ -22,7 +22,7 @@ create table if not exists sessions (
     foreign key (user_id) references users(user_id)
 ) engine = InnoDB default charset = utf8;   
 
-LOAD DATA INFILE 'загрузки/users.csv'
+LOAD DATA INFILE 'Загрузки/users.csv'
 INTO TABLE users
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n';
