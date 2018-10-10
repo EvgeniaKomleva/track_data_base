@@ -1,4 +1,4 @@
-use poni;
+use pony;
 SELECT login, SUM(payment_sum) 
 FROM users 
 JOIN payments ON users.user_id = payments.user_id
